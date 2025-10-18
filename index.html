@@ -111,8 +111,8 @@
     }
 
     .card-img-top {
-      height: 500px;
-      
+      height: 250px; /* Fixed height issue */
+      object-fit: cover; /* Ensure proper image scaling */
       border-bottom: 1px solid var(--primary);
     }
 
@@ -134,6 +134,7 @@
       width: 100%;
       max-width: 350px;
       height: 300px;
+      object-fit: cover; /* Added to maintain aspect ratio */
       border: 2px solid var(--primary);
       border-radius: 10px;
       transition: all 0.3s ease;
